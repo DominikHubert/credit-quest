@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   credit-quest:
-    image: nutrition/tracker
+    image: credit/quest
     ports:
       - "3005:80"
     volumes:
