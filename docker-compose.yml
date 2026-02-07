@@ -2,9 +2,9 @@ version: '3.8'
 
 services:
   credit-quest:
-    build: .
+    image: nutrition/tracker
     ports:
-      - "8080:80"
+      - "3005:80"
     volumes:
       - credit_data:/app/data
     container_name: credit-quest
