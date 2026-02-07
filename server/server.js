@@ -75,7 +75,7 @@ app.post('/api/data', (req, res) => {
 app.use(express.static(path.join(__dirname, '../dist')));
 
 // SPA Fallback
-app.get('/*', (req, res) => {
+app.get(/.*/, (req, res) => {
     res.sendFile(path.join(__dirname, '../dist', 'index.html'));
 });
 
