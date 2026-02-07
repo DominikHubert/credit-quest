@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  credit-quest:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - credit_data:/app/data
+    container_name: credit-quest
+    restart: unless-stopped
+
+volumes:
+  credit_data:
